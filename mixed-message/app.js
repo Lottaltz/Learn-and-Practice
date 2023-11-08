@@ -31,5 +31,21 @@ const message = [
     "Live life to the fullest, and focus on the positive.",
 ]
 
+const randomNumber = Math.floor(Math.random() * 30)
 
+function randomMessage(){
+    const num = randomNumber;
+   return message[num]
+}
 
+function showMessage(){
+    console.log('Are you tried?')
+    setTimeout(() => {
+        console.log('I will cheer you up!')
+    },1000)
+    setTimeout(() => {
+        console.log(`"${randomMessage()}"`)
+    },2000)
+}
+
+showMessage()
